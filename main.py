@@ -1,8 +1,15 @@
 import os
 import sys
 
+def files_list(path):
+    files=os.listdir(path)
+    print(files)
+    
+
 def main():
-    print("hello world")
+    line = sys.argv[1]
+    print(line,type(line))
+    files_list(line)
 
 if __name__ =="__main__":
     main()
